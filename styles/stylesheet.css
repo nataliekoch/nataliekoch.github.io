@@ -33,6 +33,13 @@ header
   background-image: url(images/minneapolis-skyline.jpg);
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 525px) {
+  .header{
+    background-size: 150%;
+  }
 }
 
 .header--text, .header--sub-text{
@@ -75,6 +82,24 @@ About Me
   border-bottom: #2C3E50 2px solid;
 }
 
+@media screen and (max-width: 1217px){
+  .about-me--bio{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 916px){
+  .about-me--bio{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 485px){
+  .about-me--bio{
+    width: 70%;
+  }
+}
+
 /*/////////////////////
 Principles
 /////////////////////*/
@@ -96,6 +121,13 @@ Principles
 .principles--text{
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 769px){
+  .principles--text{
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .principles--visual{
