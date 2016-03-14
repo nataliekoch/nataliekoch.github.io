@@ -1,0 +1,132 @@
+/*////////////////
+Global
+///////////////*/
+
+body{
+  font-family: "Arial, Helvetica, sans-serif";
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*/////////////////
+header
+/////////////////*/
+
+.header{
+  width: 100%;
+  height: 10%;
+  background-color: #FC4349;
+  padding: 30px 0;
+}
+
+.header__name{
+  margin: 0;
+  font-size: 30px;
+  color: white;
+}
+
+.header{
+  width: 100%;
+  height: 20%;
+  padding: 50px 0;
+  background-image: url(images/minneapolis-skyline.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.header--text, .header--sub-text{
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.header--text{
+  font-size: 80px;
+  border-bottom: 2px white solid;
+  width: 60%;
+}
+
+.header--sub-text{
+  font-size: 30px;
+}
+
+.color-divider{
+  padding: 10px;
+  background-color: #FC4349;
+}
+
+/*///////////////////
+About Me
+///////////////////*/
+.about-me--my-face{
+  display: block;
+  margin: auto;
+}
+
+.about-me--bio{
+  display: block;
+  margin: 10px auto 20px auto;
+  width: 30%;
+  text-align: center;
+  font-size: 25px;
+  color: #2C3E50;
+  border-top: #2C3E50 2px solid;
+  border-bottom: #2C3E50 2px solid;
+}
+
+/*/////////////////////
+Principles
+/////////////////////*/
+
+.principles--container{
+  width: 100%;
+  background-color: #2C3E50;
+  padding-bottom: 40px;
+}
+
+.principles--header{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0 0;
+}
+
+.principles--text{
+  display: flex;
+  justify-content: space-around;
+}
+
+.principles--visual{
+  padding-top: 40px;
+}
+
+.circle--container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  margin: auto;
+}
+
+.principles-icon{
+  color: #6DBCDB;
+}
+
+.principles--sub-header{
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.principles--sub-text{
+  color: white;
+  font-size: 20px;
+  width: 80%;
+  margin: auto;
+}
