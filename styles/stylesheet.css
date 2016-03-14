@@ -20,12 +20,6 @@ header
   padding: 30px 0;
 }
 
-.header__name{
-  margin: 0;
-  font-size: 30px;
-  color: white;
-}
-
 .header{
   width: 100%;
   height: 20%;
@@ -55,7 +49,26 @@ header
 }
 
 .header--sub-text{
-  font-size: 31px;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width: 790px) {
+  .header--text{
+    font-size: 60px;
+  }
+  .header--sub-text{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .header--text{
+    font-size: 40px;
+  }
+  .header--sub-text{
+    font-size: 25px;
+  }
 }
 
 .color-divider{
@@ -82,6 +95,13 @@ About Me
   border-bottom: #2C3E50 2px solid;
 }
 
+
+@media screen and (max-width: 759px) {
+  .about-me--bio{
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 1217px){
   .about-me--bio{
     width: 40%;
@@ -100,7 +120,6 @@ About Me
   }
 }
 
-/*test*/
 /*/////////////////////
 Principles
 /////////////////////*/
@@ -116,7 +135,15 @@ Principles
   color: white;
   text-align: center;
   margin: auto;
-  padding: 20px 0 0;
+  padding: 20px 0 10px;
+  border-bottom: solid white 2px;
+  width: 80%;
+}
+
+@media screen and (max-width: 759px) {
+  .principles--header{
+    font-size: 40px;
+  }
 }
 
 .principles--text{
@@ -157,9 +184,62 @@ Principles
   color: white;
 }
 
+@media screen and (max-width: 759px) {
+  .principles--sub-header{
+    font-size: 40px;
+  }
+}
+
 .principles--sub-text{
   color: white;
   font-size: 20px;
   width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+/*//////////////////
+Work
+//////////////////*/
+
+.work--header, .work--pawfinder-header{
+  margin: auto;
+  text-align: center;
+  color: #2C3E50;
+  padding-top: 20px;
+}
+
+.work--header{
+  font-size: 50px;
+  border-bottom: 2px solid #2C3E50;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.work--pawfinder-header{
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  width: 10%;
+  padding-bottom: 10px;
+}
+.work--pawfinder-header:hover{
+  color: #648bb1;
+}
+
+.work--pawfinder-image-container{
+  text-align: center;
+}
+
+.work--pawfinder-images{
+  display: inline-block;
+}
+
+.work--pawfiner-text{
+  width: 50%;
+  color: #2C3E50;
+  font-size: 20px;
+  text-align: center;
   margin: auto;
 }
