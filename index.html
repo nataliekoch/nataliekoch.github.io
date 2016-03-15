@@ -14,10 +14,13 @@
     </div>
     <div class="color-divider"></div>
     <div class="about-me">
-        <img class="about-me--my-face" src="styles/images/my_face_transparent.jpg" alt="A picture of Natalie's face" height="300" width="300">
-        <p class="about-me--bio">
-            I'm a recent graduate of Prime Digital Academy, a software engineering bootcamp. My strengths are in HTML5/CSS3, Javascript, Angular, SASS/SCSS, and Git.
-        </p>
+        <img class="about-me--my-face" src="styles/images/my_face_transparent.jpg" alt="A picture of Natalie's face" height="250" width="250">
+        <div class="about-me--text-container">
+            <p class="about-me--header">About Me</p>
+            <p class="about-me--bio">
+                I'm a recent graduate of Prime Digital Academy, a software engineering bootcamp. My strengths are in HTML5/CSS3, Javascript, Angular, SASS/SCSS, and Git.
+            </p>
+        </div>
     </div>
     <div class="color-divider"></div>
     <div class="principles--container">
@@ -25,7 +28,7 @@
         <div class="principles--text">
             <div class="principles--visual">
                 <div class="circle--container">
-                    <i class="principles-icon fa fa-graduation-cap fa-5x"></i>
+                    <i class="icon fa fa-graduation-cap fa-5x"></i>
                 </div>
                 <p class="principles--sub-header">Learning</p>
                 <p class="principles--sub-text">
@@ -38,7 +41,7 @@
             </div>
             <div class="principles--visual">
                 <div class="circle--container">
-                    <i class="principles-icon fa fa-users fa-5x"></i>
+                    <i class="icon fa fa-users fa-5x"></i>
                 </div>
                 <p class="principles--sub-header">Team Work</p>
                 <p class="principles--sub-text">
@@ -51,7 +54,7 @@
             </div>
             <div class="principles--visual">
                 <div class="circle--container">
-                    <i class="principles-icon fa fa-heart fa-5x"></i>
+                    <i class="icon fa fa-heart fa-5x"></i>
                 </div>
                 <p class="principles--sub-header">Passion</p>
                 <p class="principles--sub-text">
@@ -67,13 +70,39 @@
     <div class="color-divider"></div>
     <div class="work--container">
         <p class="work--header">Work</p>
-        <div class="work--pawfinder-image-container">
-            <img class="work-pawfinder-images" src="styles/images/pawfinder-homepage.jpg" height="auto" width="450">
-            <img class="work-pawfinder-images" src="styles/images/pawfinder-profile.jpg" height="auto" width="450">
-            <img class="work-pawfinder-images" src="styles/images/pawfinder-loginpage.jpg" height="auto" width="450">
+        <div class="work--image-container">
+            <a class="work--picture-link" href="styles/images/pawfinder-homepage.jpg">
+                <img class="work--images" src="styles/images/pawfinder-homepage.jpg" height="auto" width="400">
+            </a>
+            <a class="work--picture-link" href="styles/images/pawfinder-profile.jpg">
+                <img class="work--images" src="styles/images/pawfinder-profile.jpg" height="auto" width="400">
+            </a>
+            <a class="work--picture-link" href="styles/images/pawfinder-loginpage.jpg">
+                <img class="work--images" src="styles/images/pawfinder-loginpage.jpg" height="auto" width="400">
+            </a>
         </div>
-        <a href="http://pawfinder.herokuapp.com" class="work--pawfinder-header">Paw Finder</a>
-        <p class="work--pawfiner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <a href="http://pawfinder.herokuapp.com" class="work--project-header-link">Paw Finder</a>
+        <p class="work--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quisque sollicitudin nibh eros, quis iaculis quam imperdiet sit amet.
+            Aenean pellentesque, urna in posuere consectetur, ex ipsum auctor purus,
+            et lobortis nulla lectus eu tellus. Fusce ultrices, sem sed vestibulum vulputate,
+            ante purus volutpat nisl, a ultrices felis nisl eu risus.
+            Ut congue mi vitae fringilla dignissim.
+            Fusce a felis ut mauris pellentesque varius.
+        </p>
+        <div class="work--image-container">
+            <a class="work--picture-link" href="styles/images/sportNgin-asset-view.jpg">
+                <img class="work--images" src="styles/images/sportNgin-asset-view.jpg" height="auto" width="400">
+            </a>
+            <a class="work--picture-link" href="styles/images/sportNgin-create-reservation.jpg">
+                <img class="work--images" src="styles/images/sportNgin-create-reservation.jpg" height="auto" width="400">
+            </a>
+            <a class="work--picture-link" href="styles/images/sportNgin-asset-edit.jpg">
+                <img class="work--images" src="styles/images/sportNgin-asset-edit.jpg" height="auto" width="400">
+            </a>
+        </div>
+        <p class="work--project-header">Equipment Manager App</p>
+        <p class="work--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Quisque sollicitudin nibh eros, quis iaculis quam imperdiet sit amet.
             Aenean pellentesque, urna in posuere consectetur, ex ipsum auctor purus,
             et lobortis nulla lectus eu tellus. Fusce ultrices, sem sed vestibulum vulputate,
@@ -82,5 +111,21 @@
             Fusce a felis ut mauris pellentesque varius.
         </p>
     </div>
+    <div class="color-divider"></div>
+    <div class="contact-me">
+        <p class="contact-me--header">Contact Me</p>
+        <div class="contact-me--container">
+            <a href="mailto:natalie.koch927@gmail.com" class="contact-me--circle">
+                <i class="icon-contact fa fa-envelope fa-3x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/natalie-koch-7b72a7108" class="contact-me--circle">
+                <i class="icon-contact fa fa-linkedin fa-3x"></i>
+            </a>
+            <a href="https://github.com/nataliekoch" class="contact-me--circle">
+                <i class="icon-contact fa fa-github-alt fa-3x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="color-divider"></div>
 </body>
 </html>
