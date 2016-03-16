@@ -9,9 +9,18 @@ body{
   width: 100%;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .icon, .icon-contact{
   color: #6DBCDB;
   padding: 30px;
+  transition: background-color 300ms;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
 }
 
 .icon-contact:hover{
@@ -179,18 +188,12 @@ Principles
 
 .principles--text{
   display: flex;
-  justify-content: space-around;
-}
-
-@media screen and (max-width: 769px){
-  .principles--text{
-    flex-direction: column;
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .principles--visual{
   padding-top: 40px;
+  width: 400px;
 }
 
 .circle--container{
@@ -222,14 +225,33 @@ Principles
   font-size: 20px;
   width: 80%;
   margin: auto;
-  text-align: center;
+  text-align: left;
+
 }
+
+@media screen and (max-width: 769px){
+  .principles--text{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .principles--visual{
+    display: block;
+    margin: auto;
+  }
+
+  .principles--sub-text{
+    width: 90%;
+  }
+}
+
+
 
 /*//////////////////
 Work
 //////////////////*/
 
-.work--header, .work--project-header-link, .work--project-header{
+.work--header, .work--project-header{
   margin: auto;
   text-align: center;
   color: #2C3E50;
@@ -243,15 +265,36 @@ Work
   width: 80%;
 }
 
-.work--project-header-link, .work--project-header{
+@media screen and (max-width: 759px) {
+  .work--header{
+    font-size: 40px;
+  }
+}
+
+.work--project-header{
   font-size: 30px;
   text-decoration: none;
   display: block;
   margin: auto;
   padding-bottom: 10px;
 }
-.work--project-header-link:hover{
-  color: #648bb1;
+
+.work--icon-link{
+  color: #2C3E50
+  transition: color 300ms;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+
+.work--icon-link:hover{
+  color: #6DBCDB;
+  transition: color 300ms;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
 }
 
 .work--image-container{
@@ -265,7 +308,12 @@ Work
 .work--images{
   cursor: pointer;
   display: inline-block;
-  padding: 0 20px;
+  margin: 0 20px;
+  transition: box-shadow 300ms;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
 }
 
 .work--images:hover{
@@ -277,24 +325,43 @@ Work
   transition-delay: initial;
 }
 
-.contact-me--circle:hover{
-  background-color: #6DBCDB;
-  transition: background-color 300ms;
-  transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: initial;
-  transition-delay: initial;
-}
-
 .work--text{
   width: 50%;
   color: #2C3E50;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   margin: auto;
   padding-bottom: 100px;
 }
 
+@media screen and (max-width: 1327px){
+  .work--images{
+    display: block;
+    margin: auto;
+    width: 700px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 769px){
+  .work--images, .work--text{
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .work--images, .work--text{
+    width: 440px;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+  .work--images, .work--text{
+    width: 340px;
+  }
+}
 /*//////////////////
 Contact Me
 //////////////////*/
@@ -314,6 +381,12 @@ Contact Me
   width: 80%;
 }
 
+@media screen and (max-width: 759px) {
+  .contact-me--header{
+    font-size: 40px;
+  }
+}
+
 .contact-me--container{
   display: flex;
   justify-content: center;
@@ -329,4 +402,25 @@ Contact Me
   height: 100px;
   width: 100px;
   background-color: white;
+  transition: background-color 300ms;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-me--circle{
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.contact-me--circle:hover{
+  background-color: #6DBCDB;
+  transition: background-color 300ms;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
 }
