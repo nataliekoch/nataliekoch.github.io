@@ -3,7 +3,7 @@ Global
 ///////////////*/
 
 body{
-  font-family: "Arial, Helvetica, sans-serif";
+  font-family: Tahoma, Geneva, sans-serif;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -11,6 +11,10 @@ body{
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 .icon, .icon-contact{
@@ -143,6 +147,7 @@ About Me
     padding: 0;
   }
   .about-me--text-container{
+    padding: 0;
     display: block;
     margin: auto;
     width: 90%;
@@ -193,7 +198,7 @@ Principles
 
 .principles--visual{
   padding-top: 40px;
-  width: 400px;
+  width: 30%;
 }
 
 .circle--container{
@@ -229,13 +234,14 @@ Principles
 
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 833px){
   .principles--text{
     flex-direction: column;
     justify-content: center;
   }
 
   .principles--visual{
+    width: 90%;
     display: block;
     margin: auto;
   }
@@ -326,7 +332,7 @@ Work
 }
 
 .work--text{
-  width: 50%;
+  width: 60%;
   color: #2C3E50;
   font-size: 20px;
   text-align: left;
@@ -338,28 +344,15 @@ Work
   .work--images{
     display: block;
     margin: auto;
-    width: 700px;
+    width: 70%;
     height: auto;
     margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 769px){
-  .work--images, .work--text{
-    width: 550px;
-  }
-}
-
-@media screen and (max-width: 650px){
-  .work--images, .work--text{
-    width: 440px;
-  }
-
-}
-
-@media screen and (max-width: 450px){
-  .work--images, .work--text{
-    width: 340px;
+  .work--text{
+    width: 70%;
   }
 }
 /*//////////////////
@@ -413,6 +406,7 @@ Contact Me
   .contact-me--circle{
     height: 80px;
     width: 80px;
+    font-size: 40px;
   }
 }
 
