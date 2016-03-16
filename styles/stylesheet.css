@@ -406,7 +406,7 @@ Contact Me
   transition-delay: initial;
 }
 
-.contact-me--circle:hover .icon-contact{
+.contact-me--circle:hover .icon-contact,.contact-me--circle:active .icon-contact {
   color: #2C3E50;
   transition: color 300ms;
   transition-property: color;
