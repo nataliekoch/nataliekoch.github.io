@@ -19,7 +19,6 @@ img {
 
 .icon, .icon-contact{
   color: #6DBCDB;
-  padding: 30px;
   transition: background-color 300ms;
   transition-property: background-color;
   transition-duration: 300ms;
@@ -400,6 +399,7 @@ Contact Me
   transition-duration: 300ms;
   transition-timing-function: initial;
   transition-delay: initial;
+  font-size: 60px;
 }
 
 @media screen and (max-width: 600px) {
