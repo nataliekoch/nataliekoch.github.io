@@ -134,12 +134,6 @@ About Me
 }
 
 @media screen and (max-width: 726px) {
-  .about-me--text-container{
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 726px) {
   .about-me--my-face{
     display: block;
     margin: auto;
@@ -351,7 +345,7 @@ Work
 
 @media screen and (max-width: 769px){
   .work--text{
-    width: 70%;
+    width: 90%;
   }
 }
 /*//////////////////
