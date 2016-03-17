@@ -17,7 +17,7 @@ img {
   max-width: 100%;
 }
 
-.icon, .icon-contact{
+.icon{
   color: #6DBCDB;
   transition: background-color 300ms;
   transition-property: background-color;
@@ -152,7 +152,7 @@ About Me
 /*/////////////////////
 Principles
 /////////////////////*/
-
+/*
 .principles--container{
   width: 100%;
   background-color: #2C3E50;
@@ -233,24 +233,26 @@ Principles
   .principles--sub-text{
     width: 90%;
   }
-}
-
-
+}*/
 
 /*//////////////////
 Work
 //////////////////*/
 
+.work--container{
+  background-color: #2C3E50;
+}
+
 .work--header, .work--project-header{
   margin: auto;
   text-align: center;
-  color: #2C3E50;
+  color: white;
   padding-top: 20px;
 }
 
 .work--header{
   font-size: 50px;
-  border-bottom: 2px solid #2C3E50;
+  border-bottom: 2px solid white;
   margin-bottom: 50px;
   width: 80%;
 }
@@ -271,7 +273,7 @@ Work
 }
 
 .work--icon-link{
-  color: #2C3E50;
+  color: white;
   transition: color 300ms;
   transition-property: color;
   transition-duration: 300ms;
@@ -308,7 +310,7 @@ Work
 }
 
 .work--images:hover{
-  box-shadow: 5px 5px 50px rgb(190, 190, 190);
+  box-shadow: 5px 5px 50px #0f151b;
   transition: box-shadow 300ms;
   transition-property: box-shadow;
   transition-duration: 300ms;
@@ -318,7 +320,7 @@ Work
 
 .work--text{
   width: 60%;
-  color: #2C3E50;
+  color: white;
   font-size: 20px;
   text-align: left;
   margin: auto;
@@ -348,15 +350,15 @@ Contact Me
 .contact-me{
   padding: 30px 0;
   width: 100%;
-  background-color: #2C3E50;
+  background-color: white;
 }
 
 .contact-me--header{
-  color: white;
+  color: #2C3E50;
   font-size: 50px;
   text-align: center;
   margin: 0 auto 20px;;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #2C3E50;
   width: 80%;
 }
 
@@ -380,7 +382,7 @@ Contact Me
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  background-color: white;
+  background-color: #6DBCDB;
   transition: background-color 300ms;
   transition-property: background-color;
   transition-duration: 300ms;
@@ -398,7 +400,16 @@ Contact Me
 }
 
 .contact-me--circle:hover{
-  background-color: #6DBCDB;
+  background-color: #2C3E50;
+  transition: background-color 300ms;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+
+.icon-contact{
+  color: white;
   transition: background-color 300ms;
   transition-property: background-color;
   transition-duration: 300ms;
@@ -407,7 +418,7 @@ Contact Me
 }
 
 .contact-me--circle:hover .icon-contact{
-  color: #2C3E50;
+  color: #6DBCDB;
   transition: color 300ms;
   transition-property: color;
   transition-duration: 300ms;
