@@ -42,7 +42,7 @@ body {
   src: local("Oswald Regular"), local("Oswald-Regular"), url(../../fonts/Oswald-Regular.ttf) format("woff2"); }
 
 @font-face {
-  font-family: 'Quattrocento-Regular';
+  font-family: 'Quattrocento';
   font-style: normal;
   font-weight: 400;
   src: local("Quattrocento Regular"), local("Quattrocento-Regular"), url(../../fonts/Quattrocento-Regular.ttf) format("woff2"); }
@@ -75,7 +75,7 @@ body {
     transform: translateY(0); } }
 
 .primary-section {
-  font-family: Oswald-Regular, Lucidia Grande, Helvetica, Arial, sans-serif;
+  font-family: Oswald, Lucidia Grande, Helvetica, Arial, sans-serif;
   width: 100vw; }
   .primary-section.intro, .primary-section.contact {
     background-color: #ffa88c; }
@@ -210,7 +210,7 @@ body {
     .about-me .about-me--text > p, .about-me .about-me--text ul, .about-me .about-me--text li {
       color: #9fa2a5;
       font-size: 1.5rem;
-      font-family: Quattrocento-Regular, Lucidia Grande, Helvetica, Arial, sans-serif; }
+      font-family: Quattrocento, Lucidia Grande, Helvetica, Arial, sans-serif; }
     .about-me .about-me--text > ul {
       padding: 0 20px; }
 
@@ -253,7 +253,7 @@ body {
   .project-history .project-history--wrapper:nth-child(2) .project-history--text > h1, .project-history .project-history--wrapper:nth-child(2) .project-history--text p, .project-history .project-history--wrapper:nth-child(2) .project-history--text .project-history--links {
     text-align: left; }
   .project-history .project-history--wrapper:nth-child(3) {
-    padding-bottom: 0; }
+    padding-bottom: 100px; }
 
 .project-history .project-history--text {
   width: 60%;
@@ -272,7 +272,7 @@ body {
       font-size: 30px; }
     .project-history .project-history--text .project-history--bullet > p {
       text-transform: uppercase;
-      font-family: Oswald-Regular, Lucidia Grande, Helvetica, Arial, sans-serif;
+      font-family: Oswald, Lucidia Grande, Helvetica, Arial, sans-serif;
       letter-spacing: 2px;
       line-height: 43px;
       padding-left: 10px; }
@@ -280,7 +280,7 @@ body {
     font-size: 2rem; }
   .project-history .project-history--text p {
     font-size: 1.2rem;
-    font-family: Quattrocento-Regular, Lucidia Grande, Helvetica, Arial, sans-serif;
+    font-family: Quattrocento, Lucidia Grande, Helvetica, Arial, sans-serif;
     line-height: 30px; }
   .project-history .project-history--text .project-history--links {
     text-align: left;
@@ -390,7 +390,7 @@ body {
     text-align: center;
     color: white;
     font-size: 2vw;
-    font-family: Quattrocento-Regular, Lucidia Grande, Helvetica, Arial, sans-serif; }
+    font-family: Quattrocento, Lucidia Grande, Helvetica, Arial, sans-serif; }
   .contact div {
     display: -ms-flexbox;
     display: flex;

@@ -1,5 +1,5 @@
 .primary-section {
-  font-family: Oswald-Regular, Lucidia Grande, Helvetica, Arial, sans-serif;
+  font-family: Oswald, Lucidia Grande, Helvetica, Arial, sans-serif;
   width: 100vw;
 
   &.intro, &.contact{
@@ -147,7 +147,7 @@
   display: flex;
   justify-content: space-around;
   align-items: inherit;
-  padding: 30px 0; 
+  padding: 30px 0;
 
   .about-me--image {
     display: flex;
@@ -174,7 +174,7 @@
     >p, ul, li {
       color: #9fa2a5;
       font-size: 1.5rem;
-      font-family: Quattrocento-Regular, Lucidia Grande, Helvetica, Arial, sans-serif;
+      font-family: Quattrocento, Lucidia Grande, Helvetica, Arial, sans-serif;
     }
 
     >ul{
@@ -247,7 +247,7 @@
     }
 
     &:nth-child(3){
-      padding-bottom: 0;
+      padding-bottom: 100px;
     }
   }
 
@@ -274,7 +274,7 @@
 
       >p {
         text-transform: uppercase;
-        font-family: Oswald-Regular, Lucidia Grande, Helvetica, Arial, sans-serif;
+        font-family: Oswald, Lucidia Grande, Helvetica, Arial, sans-serif;
         letter-spacing: 2px;
         line-height: 43px;
         padding-left: 10px;
@@ -287,7 +287,7 @@
 
     p {
       font-size: 1.2rem;
-      font-family: Quattrocento-Regular, Lucidia Grande, Helvetica, Arial, sans-serif;
+      font-family: Quattrocento, Lucidia Grande, Helvetica, Arial, sans-serif;
       line-height: 30px;
     }
 
@@ -457,7 +457,7 @@
     text-align: center;
     color: white;
     font-size: 2vw;
-    font-family: Quattrocento-Regular, Lucidia Grande, Helvetica, Arial, sans-serif;
+    font-family: Quattrocento, Lucidia Grande, Helvetica, Arial, sans-serif;
   }
 
   div {
