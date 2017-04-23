@@ -1,0 +1,30 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet {
+  @media (min-width: 600px) and (max-width: 900px) { @content; }
+}
+
+@mixin tablet-down {
+  @media (max-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+
+
+@mixin circle ($size, $color){
+    height:$size;
+    width:$size;
+    border-radius: 50%;
+    background-color: $color;
+}
+
+@mixin animation ($duration, $delay, $fill, $timing, $name){
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-fill-mode: $fill;
+  animation-timing-function: $timing;
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}

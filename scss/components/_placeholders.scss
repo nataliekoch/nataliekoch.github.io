@@ -1,0 +1,11 @@
+%flexbox-center {
+    display: flex;
+    justify-content:center;;
+    align-items: center;
+}
+
+%flexbox-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

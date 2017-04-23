@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Natalie Koch</title>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="scripts/main.min.js"></script>
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.min.css">
+    </head>
+    <body>
+        <div class="primary-section intro center">
+          <div class="primary-section-wrapper">
+            <div class="header-wrapper">
+              <h1 class="header main">Natalie</h1>
+              <h1 class="header main">Koch</h1>
+            </div>
+            <div>
+              <div class="title-wrapper">
+                  <img class="logo-image" src="../images/logo-start-pink.svg"/>
+                  <p>Front End Developer</p>
+                  <img class="logo-image" src="../images/logo-end-pink.svg"/>
+              </div>
+            </div>
+            <div class="skill-text-wrapper">
+                <p>HTML</p>
+                <p class="circle"></p>
+                <p>Javascript</p>
+                <p class="circle"></p>
+                <p>CSS</p>
+            </div>
+            <div class="mouse-wrapper fadeInDown">
+              <img class="mouse-image" src=../images/mouse-scroll.svg></img>
+              <div>
+                <p>Scroll Down</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="primary-section about-me" ng-controller="GreetingController">
+          <!-- Removed - not MVP -->
+          <!-- <div class="about-me--image">
+              <img src="../images/picture-frame-gold.svg"/>
+          </div> -->
+          <div class="about-me--text">
+              <h1>A little about me…</h1>
+              <p>I'm an up and coming front-end developer who strives to produce quality work in both code and design.</br></br>
+
+              By day, I code full-time at an agency focusing on:</p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3 (SASS, too)</li>
+                <li>Javascript (vanilla, jQuery, Angular)</li>
+              </ul></br></br>
+              <p>In my freetime, I dabble in design and drawing with Photoshop and Illustrator.</p>
+          </div>
+        </div>
+        <div class="primary-section project-history" ng-controller="GreetingController">
+            <h1>Projects<h1>
+            <!-- PAWFINDER -->
+            <div class="project-history--wrapper">
+                <div class="project-history--image">
+                    <img src="../images/laptop-pawfinder.png"/>
+                </div>
+                <div class="project-history--text">
+                    <h1>PawFinder</h1>
+                      <div class="project-history--bullet">
+                        <span>•</span>
+                        <p>Front-End, Back-End, and Design</p>
+                      </div>
+                    </ul>
+                    <p>
+                      After becoming frustrated with other pet adoption sites,
+                      I wanted to create something that would make the process easier.</br></br>
+
+                      Pawfinder allows users to browse for a particular breed of cat or dog in your local
+                      area within a masonry-styled interface. Each pet profile focuses on delivering
+                      the most important info for searching through pets quickly.
+                    </p>
+                     <div class="project-history--links">
+                      <a href="http://pawfinder.herokuapp.com" class="link-circles">
+                        <img src="../images/link-image.svg"></img>
+                      </a>
+                      <a href="https://github.com/nataliekoch/Prime_solo_project" class="link-circles">
+                        <img src="../images/github-image.svg"></img>
+                      </a>
+                     </div>
+                </div>
+            </div>
+            <!-- EQUIPMENT MANAGER -->
+            <div class="project-history--wrapper">
+                <div class="project-history--text">
+                    <h1>Equipment Manager</h1>
+                    <div class="project-history--bullet">
+                      <span>•</span>
+                      <p>Front-End Design and Logic</p>
+                    </div>
+                    <p>
+                      The Equipment Manger app allows users with a Sports Engine account to upload
+                      their equipment inventory. Along with a team of fellow students,
+                      we created a mobile-first application where users can check out equipment
+                      for games and events pulled from their teams online calendar.</br></br>
+
+                      My primary focus for this project was designing and styling the application in
+                      accordance with Sports Engine’s style guide with a strong emphasis on mobile
+                      friendliness.
+                     </p>
+                     <div class="project-history--links">
+                       <div class="project-history--links">
+                        <a class="link-circles disabled">
+                          <img src="../images/link-image-gray.svg"></img>
+                        </a>
+                        <a href="https://github.com/nataliekoch/prime_group_capstone" class="link-circles">
+                          <img src="../images/github-image.svg"></img>
+                        </a>
+                       </div>
+                     </div>
+                </div>
+                <div class="project-history--image">
+                    <img src="../images/laptop-phone-SN.png"/>
+                </div>
+            </div>
+            <!-- SPORTSENGINE -->
+            <div class="project-history--wrapper">
+                <div class="project-history--image">
+                    <img src="../images/laptop-phone-WAYA.png"/>
+                </div>
+                <div class="project-history--text">
+                    <h1>WAYA - SportsEngine</h1>
+                    <div class="project-history--bullet">
+                      <span>•</span>
+                      <p>Front-End Logic and Styling</p>
+                    </div>
+                    <p>
+                        My team and I applied a redesign onto SportsEngine’s CMS.
+                        Collaborating with the design team, I executed the new layout with responsive styles.
+                        Additionally, I developed new front-end interactions using jQuery,
+                        ensuring that everything was consistent and usable across devices.
+                     </p>
+                     <div class="project-history--links">
+                       <div class="project-history--links">
+                        <a href="http://waya.org" class="link-circles">
+                          <img src="../images/link-image.svg"></img>
+                        </a>
+                        <a class="link-circles disabled">
+                          <img src="../images/github-image-gray.svg"></img>
+                        </a>
+                       </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="primary-section contact" ng-controller="GreetingController">
+            <h1 class="contact-section--header">Wanna Collab?</h1>
+            <p>I’m always open to new opportunities.<br>I'd love to hear what you’re working on.</p>
+
+            <div>
+              <a href="mailto:natalie.koch927@gmail.com">Email</a>
+              <a href="https://github.com/nataliekoch">Github</a>
+              <a href="https://www.linkedin.com/in/natalie-koch-7b72a7108/">LinkedIn</a>
+            </div>
+        </div>
+    </body>
+</html>
