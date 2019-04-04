@@ -80,6 +80,19 @@
           .far {
             padding-right: 5px;
           }
+          span:hover .far {
+            animation-name: wiggle;
+            animation-duration: 500ms;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out
+          }
+          @keyframes wiggle {
+            0% {transform: rotate(10deg);}
+            25% {transform: rotate(-10deg);}
+            50% {transform: rotate(20deg);}
+            75% {transform: rotate(-5deg);}
+            100% {transform: rotate(0deg);}
+          }
           .anchor-wrapper {
             padding-bottom: 10px;
           }
@@ -92,12 +105,16 @@
         <p>I'm an accessiblility and user-centric focused developer.</br> 
            I pride myself in developing clean, managable code using HTML, CSS and JS.</p>
         <div class='anchor-wrapper'>
-          <i class="far fa-file"></i>
-          <a href='Natalie-Koch-Resume.pdf'>View résumé</a>
+          <span>
+            <i class="far fa-file"></i>
+            <a href='Natalie-Koch-Resume.pdf'>View résumé</a>
+          </span>
         </div>
         <div class='email anchor-wrapper'>
-          <i class="far fa-envelope"></i>
-          <a href="mailto:natalie.koch927@gmail.com">natalie.koch927@gmail.com</a>
+          <span>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:natalie.koch927@gmail.com">natalie.koch927@gmail.com</a>
+          </span>
         </div>
       </div>
     </body>
