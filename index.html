@@ -51,9 +51,6 @@
           p, a {
             font-family: 'Quattrocento Sans', sans-serif;
           }
-          div {
-            padding-bottom: 10px;
-          }
           a {
             color: white; 
           }
@@ -65,12 +62,6 @@
             padding-right: 5px;
           }
           .radial-gradient {
-            position:fixed;
-            top:0px;
-            left:0px;
-            height:100%;
-            width:100%;
-            
             /*Fallback if gradeints don't work */
             background: #9b59b6;
             /*Linear gradient... */
@@ -79,19 +70,22 @@
                #3498db, #9b59b6
               );
           }
+          .anchor-wrapper {
+            padding-bottom: 10px;
+          }
         </style>
     </head>
-    <body id='body'>
+    <body>
       <div>
         <h1>Natalie Koch</h1>
         <h2>Front-End Developer</h2>
         <p>I'm an accessiblility and user-centric focused developer.</br> 
            I pride myself in developing clean, managable code using HTML, CSS and JS.</p>
-        <div>
+        <div class='anchor-wrapper'>
           <i class="far fa-file"></i>
           <a href='Natalie-Koch-Resume.pdf'>View résumé</a>
         </div>
-        <div class='email'>
+        <div class='email anchor-wrapper'>
           <i class="far fa-envelope"></i>
           <a href="mailto:natalie.koch927@gmail.com">natalie.koch927@gmail.com</a>
         </div>
