@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class='radial-gradient'>
     <head>
         <meta charset="utf-8">
         <title>Natalie Koch — Front-end web developer</title>
@@ -39,6 +39,7 @@
             height: 100vh;
             text-align: left;
             margin: 20px;
+            color: white; 
           }
           h1 {
             margin-bottom: 0; 
@@ -46,7 +47,6 @@
           h2 {
             margin-top: 0;
             font-size: 18px;
-            color: #757474;
           }
           p, a {
             font-family: 'Quattrocento Sans', sans-serif;
@@ -55,7 +55,7 @@
             padding-bottom: 10px;
           }
           a {
-            color: #0068bb;
+            color: white; 
           }
           .email {
             display: flex;
@@ -64,9 +64,24 @@
           .far {
             padding-right: 5px;
           }
+          .radial-gradient {
+            position:fixed;
+            top:0px;
+            left:0px;
+            height:100%;
+            width:100%;
+            
+            /*Fallback if gradeints don't work */
+            background: #9b59b6;
+            /*Linear gradient... */
+            background: 
+              radial-gradient(
+               #3498db, #9b59b6
+              );
+          }
         </style>
     </head>
-    <body>
+    <body id='body'>
       <div>
         <h1>Natalie Koch</h1>
         <h2>Front-End Developer</h2>
@@ -81,5 +96,23 @@
           <a href="mailto:natalie.koch927@gmail.com">natalie.koch927@gmail.com</a>
         </div>
       </div>
+      <script>
+        window.onload = function() {
+          const html = document.querySelector('html');
+
+          document.addEventListener("mousemove", myFunction);
+
+          function myFunction(event) {
+            const windowWidth = html.clientWidth;
+            const windowHeight = html.clientHeight;
+            
+            const mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+            const mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+
+            const background = `radial-gradient(at ${mouseXpercentage}% ${mouseYpercentage}%  , #3498db, #9b59b6)`
+            html.style.background = background 
+          }
+        };
+      </script>
     </body>
 </html>
