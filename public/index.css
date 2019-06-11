@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans|Work+Sans");
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: left;
+  margin: 0 20px;
+  color: white;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 200% 200%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+h1, h2 {
+  font-family: "Work Sans", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+p, a {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: white;
+}
+
+.email {
+  display: flex;
+  align-items: flex-end;
+}
+
+.resume {
+  display: flex;
+}
+
+.far {
+  padding-right: 10px;
+}
+
+span:hover .far {
+  animation-name: wiggle;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.anchor-wrapper {
+  padding-bottom: 10px;
+  display: inline-flex;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=index.css.map */
